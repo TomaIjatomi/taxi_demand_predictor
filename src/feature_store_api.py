@@ -7,7 +7,7 @@ import hopsworks
 import src.config as config
 from src.logger import get_logger
 
-#logger = get_logger()
+logger = get_logger()
 
 @dataclass
 class FeatureGroupConfig:
@@ -39,7 +39,7 @@ def get_feature_store() -> hsfs.feature_store.FeatureStore:
 # TODO: remove this function, and use get_or_create_feature_group instead
 def get_feature_group(
     name: str,
-    version: Optional[int] = 1
+    version: Optional[int] = 3
     ) -> hsfs.feature_group.FeatureGroup:
     """Connects to the feature store and returns a pointer to the given
     feature group `name`

@@ -41,7 +41,8 @@ FEATURE_VIEW_METADATA = FeatureViewConfig(
     feature_group=FEATURE_GROUP_METADATA,
 )
 
-MODEL_NAME = 'taxi_demand_predictor'
+MODEL_NAME = 'taxi_demand_predictor_next_hour'
+MODEL_VERSION = 2
 
 # added for monitoring purposes
 # TODO remove FEATURE_GROUP_MODEL_PREDICTIONS and use FEATURE_GROUP_PREDICTIONS_METADATA instead
@@ -69,7 +70,7 @@ MONITORING_FV_VERSION = 1
 N_FEATURES = 24 * 28
 
 # number of iterations we want Optuna to pefrom to find the best hyperparameters
-N_HYPERPARAMETER_SEARCH_TRIALS = 1
+N_HYPERPARAMETER_SEARCH_TRIALS = 5
 
 # maximum Mean Absolute Error we allow our production model to have
 MAX_MAE = 30.0

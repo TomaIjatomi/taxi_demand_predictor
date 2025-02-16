@@ -9,6 +9,10 @@ import src.config as config
 from src.feature_store_api import get_feature_store, get_or_create_feature_view
 from src.config import FEATURE_VIEW_METADATA
 
+from src.logger import get_logger
+
+logger = get_logger()
+
 def get_hopsworks_project() -> hopsworks.project.Project:
 
     return hopsworks.login(
