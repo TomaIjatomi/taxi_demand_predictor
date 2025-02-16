@@ -45,8 +45,7 @@ jobs:
             echo "$HOME/.local/bin" >> $GITHUB_PATH
         
         - name: Install Dependencies
-          run: poetry install
-          working-directory: taxi_demand_predictor
+          run: $HOME/.local/bin/poetry install
             
         - name: Run training script
           env:
