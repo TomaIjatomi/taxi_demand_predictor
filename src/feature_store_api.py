@@ -5,7 +5,7 @@ import hsfs
 import hopsworks
 
 import src.config as config
-#from src.logger import get_logger
+from src.logger import get_logger
 
 #logger = get_logger()
 
@@ -101,8 +101,7 @@ def get_or_create_feature_view(
             query=feature_group.select_all()
         )
     except:
-        pass
-        #logger.info("Feature view already exists, skipping creation.")
+        logger.info("Feature view already exists, skipping creation.")
     
     # get feature view
     feature_store = get_feature_store()

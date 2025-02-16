@@ -20,6 +20,10 @@ dependencies = [
     "python-dotenv (>=1.0.1,<2.0.0)",
     "pandas (<2.2.0)",
     "hopsworks[python] (>=4.1.8,<5.0.0)",
+    "streamlit (>=1.42.0,<2.0.0)",
+    "geopandas (>=1.0.1,<2.0.0)",
+    "comet-ml (>=3.49.0,<4.0.0)",
+    "retry (>=0.9.2,<0.10.0)",
 ]
 
 
