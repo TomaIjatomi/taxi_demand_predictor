@@ -15,7 +15,7 @@ from src import config
 from src.config import FEATURE_VIEW_METADATA, N_HYPERPARAMETER_SEARCH_TRIALS
 from src.data import transform_ts_data_into_features_and_target
 from src.data_split import train_test_split
-from src.discord import send_message_to_channel
+#from src.discord import send_message_to_channel
 from src.feature_store_api import get_or_create_feature_view
 from src.logger import get_logger
 from src.model import get_pipeline
@@ -239,9 +239,9 @@ def train(
         experiment.log_parameter('model_version', model_version)
 
         # send notification on Discord
-        send_message_to_channel(
-            f'New model pushed to the model registry. {test_mae=:.4f}, {model_version=}'
-        )
+        #send_message_to_channel(
+         #   f'New model pushed to the model registry. {test_mae=:.4f}, {model_version=}'
+       # )
 
     else:
         logger.info(
