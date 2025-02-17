@@ -2,7 +2,7 @@
 
 Predict the upcoming hour's user demand for NYC taxi. This enables optimization of fleet distribution and potential revenue increase. This guide covers all project aspects, from setup to contribution.
 
-![Banner](https://github.com/user-attachments/assets/368c722d-603c-47ff-8414-6dfb4a148a47)
+https://github.com/user-attachments/assets/368c722d-603c-47ff-8414-6dfb4a148a47
 
 
 > **Note**: This project is currently a work in progress. I will be making significant updates throughout this week.
@@ -41,8 +41,8 @@ The MLOps strategy adopted here is built upon the FTI (Feature, Training, Infere
 
 A significant part of the development process is prototyping and experimentation. In this project, Jupyter notebooks have been employed extensively for this purpose. Here's a breakdown of the notebooks corresponding to each of the FTI pipelines:
 
-![Image](![3-pipelines](https://github.com/user-attachments/assets/1935f0ce-5028-4cce-8f73-0c51956cb624)
-)
+![3-pipelines](https://github.com/user-attachments/assets/5af35b21-0678-4742-b529-9c9117808a6b)
+
 
 ## 📊 Feature Pipeline
 
