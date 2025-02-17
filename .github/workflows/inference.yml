@@ -62,6 +62,11 @@ jobs:
         shell: bash
         env:
           HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
+          HOPSWORKS_PROJECT_NAME: ${{ secrets.HOPSWORKS_PROJECT_NAME }}
+          #HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
+          COMET_ML_API_KEY: ${{ secrets.COMET_ML_API_KEY }}
+          COMET_ML_WORKSPACE: ${{ secrets.COMET_ML_WORKSPACE }}
+          COMET_ML_PROJECT_NAME: ${{ secrets.COMET_ML_PROJECT_NAME }}
         run: |
           export HOPSWORKS_API_KEY=${{ secrets.HOPSWORKS_API_KEY }}
           poetry run jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.kernel_name=NYC_taxi_demand_predictor notebooks/14_inference_pipeline.ipynb
