@@ -2,10 +2,10 @@ name: inference-pipeline  # Define the name of the GitHub Actions workflow
 
 on:
   # Run this workflow every time the 'feature-pipeline' workflow completes.
-  #workflow_run:
-   # workflows: ['feature-pipeline']  # Name of the workflow to monitor
-   # types:
-     # - completed  # Trigger this workflow when the monitored workflow is completed
+  workflow_run:
+    workflows: ['feature-pipeline']  # Name of the workflow to monitor
+    types:
+      - completed  # Trigger this workflow when the monitored workflow is completed
 #
   # Allow this workflow to be manually triggered from the GitHub UI
   workflow_dispatch:
